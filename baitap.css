@@ -1,0 +1,109 @@
+body {
+    width: 800px;
+    height: 700px;
+    border: 1px solid rgb(24, 23, 23);
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.tong {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 250px;
+}
+div.logo {
+    background-image: url(https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/f1/8a/b8/f18ab860-bd48-b6d1-bdbf-ac0ad871bb6b/source/256x256bb.jpg);
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    width: 240px;
+    height: 250px;
+    float: left;
+}
+#infor {
+    text-transform: uppercase;
+    width: 547px;
+    height: 250px;
+    float: right;
+    background-image: url(https://us.123rf.com/450wm/andreahast/andreahast1508/andreahast150800008/44564112-b%C3%AA-t%C3%B4ng-m%C3%A0u-x%C3%A1m-t%C6%B0%E1%BB%9Dng-tr%E1%BB%ABu-t%C6%B0%E1%BB%A3ng-n%E1%BB%81n-k%E1%BA%BFt-c%E1%BA%A5u.jpg?ver=6);
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+}
+p.so1 {
+    margin-top: 155px;
+    font-size: 20px;
+}
+#cam {
+    width: 37px;
+    height: 15px;
+    float: right;
+    position: relative;
+    background-color: orangered;
+    margin-right: 10px;
+    bottom: 30px;
+}
+div.phan2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 230px;
+}
+div.dong1 {
+    width: 650px;
+    height: 230px;
+    color: white;
+    background-color: rgb(36, 31, 31);
+    margin-left: 5px;
+    float: left;
+    margin-left: 5px;
+}
+#mon {
+    height: 5px;
+    font-size: 25px;
+    margin-left: 10px;
+}
+#xanh {
+    height: 6px;
+    color: green;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 80px;
+}
+#to {
+
+    font-size: 50px;
+    margin-left: 10px;
+}
+div.camto {
+    width: 135px;
+    height: 230px;
+    background-color: orangered;
+    float: right;
+    margin-right: 5px;
+    position: relative;
+    bottom: 10px;
+}
+div.xanhcuoi {
+    height: 200px;
+    width: 790px;
+    background-image: url(https://img.pikbest.com/best/video_preview_img/2403/10107813-65e828cb51066.jpg!w700wp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    float: left;
+    margin-left: 5px;
+}
+div.footer {
+    width: 300px;
+    height: 300px;
+    color: red;
+    text-shadow: 
+        -2px -2px 0 white,  
+        2px -2px 0 white,
+        -2px 2px 0 white,
+        2px 2px 0 white;
+    font-size: 20px; 
+    margin-right: 60px;
+    float: right;
+
+}
+

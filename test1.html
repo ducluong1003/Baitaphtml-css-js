@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiết Kế Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(3, auto);
+            gap: 10px;
+        }
+        .logo {
+            background-image: url('https://example.com/logo.png');
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+        .info {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+        .course {
+            grid-column: span 2;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .lesson {
+            grid-column: span 2;
+            background-color: #ccc;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .footer {
+            grid-column: span 2;
+            background-image: url('https://example.com/grass.png');
+            background-size: cover;
+            color: white;
+            padding: 20px;
+            text-align: right;
+            position: relative;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://example.com/logo.png" alt="Logo" width="150">
+        </div>
+        <div class="info">
+            <p>ĐẠI HỌC QUỐC GIA TP.HỒ CHÍ MINH<br>
+            TRƯỜNG ĐẠI HỌC KHOA HỌC TỰ NHIÊN<br>
+            KHOA CÔNG NGHỆ THÔNG T

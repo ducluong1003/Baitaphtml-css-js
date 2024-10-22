@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook</title>
+    <link rel="stylesheet" href="fb&Button&js.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  </head>
+  <body>
+    <h1>Facebook</h1>
+    <div class="container">
+      <div class="headLine">
+        <h2>Tạo tài khoản mới</h2>
+        <p id="l1">Nhanh chóng và dễ dàng</p>
+      </div>
+      <br />
+      <form id="Form">
+        <input type="text" placeholder="Họ" id="ho" />
+        <input type="text" placeholder="Tên" id="ten" />
+        <input type="text" placeholder="Số di động hoặc email" id="mail" />
+        <br />
+        <input type="password" placeholder="Mật khẩu" id="Password" />
+        <p class="date">Ngày sinh <i class="fa-solid fa-circle-question"></i></p>
+        <select id="ngay">
+          <option value="">Chọn ngày</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+        <select id="thang">
+          <option value="">Chọn tháng</option>
+          <option value="1">Tháng 1</option>
+          <option value="2">Tháng 2</option>
+        </select>
+        <select id="nam">
+          <option value="">Chọn năm</option>
+          <option value="1946">1946</option>
+          <option value="1945">1945</option>
+        </select>
+        <p class="gioitinh">Giới tính <i class="fa-solid fa-circle-question"></i></p>
+        <div class="male">
+          <label for="male">Nam</label>
+          <input type="radio" name="gender" id="male" value="Nam" />
+        </div>
+        <div class="female">
+          <label for="female">Nữ</label>
+          <input type="radio" name="gender" id="female" value="Nữ" />
+        </div>
+        <div class="custom">
+          <label for="custom">Tùy chỉnh</label>
+          <input type="radio" name="gender" id="custom" value="Tùy chỉnh" />
+        </div>
+        <select name="" id="danhXung">
+          <option value="">Anh ấy : " Chúc anh ấy sinh nhật vui vẻ!"</option>
+          <option value="">Cô ấy : " Chúc anh ấy sinh nhật vui vẻ!"</option>
+          <option value="">Bạn ấy : " Chúc anh ấy Một ngày tốt lành!"</option>
+        </select>
+        <p class="dx">Danh xưng của bạn hiển thị với tất cả mọi người.</p>
+        <input
+          type="text" placeholder="Giới tính (không bắt buộc)"name="" id="DanhXung"
+        />
+        <p class="dieuKhoan">
+          Những người dùng dịch vụ của chúng tôi có thể đã tải thông tin của bạn
+          lên facebook. <a href="">Tìm hiểu thêm</a> <br />
+          <br />
+          Bằng cách nhấp vào đăng kí , bạn đồng ý với
+          <a href=""
+            >Điều khoản, chính sách quyền riêng tư và chính sách cookie
+          </a>
+          của chúng tôi qua SMS và hủy nhận bất cứ lúc nào.
+        </p>
+        <br />
+        <button type="submit" onclick="validateForm(event)">Đăng ký</button>
+        <br /><br />
+        <a class="end" href="">Bạn đã có tài khoản ư ?</a>
+      </form>
+      <p id="hienThi"></p>
+    </div>
+
+    <script>
+      function validateForm(event) {
+        event.preventDefault();
+
+        var ho = document.getElementById("ho").value;
+        var ten = document.getElementById("ten").value;
+        var mail = document.getElementById("mail").value;
+        var password = document.getElementById("Password").value;
+        var ngay = document.getElementById("ngay").value;
+        var thang = document.getElementById("thang").value;
+        var nam = document.getElementById("nam").value;
+        var gender = document.querySelector('input[name="gender"]:checked');
+
+        if (!ho || !ten || !mail || !password || !ngay || !thang || !nam || !gender) {
+          alert("Vui lòng điền đầy đủ thông tin.");
+        } else {
+          var fullName = ho + " " + ten;
+          var dob = ngay + "/" + thang + "/" + nam;
+          var genderText = gender.value;
+
+          var successMessage = "Xin chào " + fullName + ", sinh ngày " + dob + ", giới tính " + genderText + ", đã đăng ký thành công.";
+          
+         
+          document.getElementById("hienThi").innerText = hienThi;
+        }
+      }
+    </script>
+  </body>
+</html>

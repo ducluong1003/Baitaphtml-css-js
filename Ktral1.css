@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.img {
+    width: 40%;
+    height: 450px;
+    margin-left: 200px;
+}
+div.content {
+    width: 60%;
+    margin-left:20px ;
+}
+img {
+    object-fit: cover;
+}
+#so1 {
+    width: 350px;
+    height: 400px;
+   
+}
+
+div.headLine{
+font-size: 20px;
+}
+
+
+
+div.sale {
+    display: inline;
+    color: rgb(247, 52, 3);
+}
+div.ngoai {
+    display: flex;
+    flex-direction: row;
+}
+div.phai {
+    margin-top: 17px;
+}
+#xanh {
+    color: rgb(4, 192, 176);
+}
+#add{
+
+    border: 2px solid rgb(247, 52, 3);
+    height: 30px;
+    color: rgb(240, 64, 10);
+    background-color: rgb(246, 248, 232);
+   
+}
+#mua{
+    width: 100px;
+    height: 30px;
+    margin-top: 16px;
+    margin-left: 10px;
+    color: white;
+    background-color: rgb(247, 62, 6);
+    border: none;
+}
+div.content {
+    margin-right: 350px;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+#soLuong {
+    width: 40px;
+    text-align: center;
+    justify-content: center;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoppe</title>
+    <link rel="stylesheet" href="Ktral1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body> 
+    <div class="dau"><a href="https://humg.edu.vn/"> Trang chủ</a>
+    &nbsp;&nbsp; > &nbsp;&nbsp;
+    <a href="https://humg.edu.vn/"> Gia dụng</a>
+    &nbsp;&nbsp; > &nbsp;&nbsp;
+    <a href="https://humg.edu.vn/"> Đồ dùng nhà bếp</a>
+    &nbsp;&nbsp; > &nbsp;&nbsp;
+    <a href="https://humg.edu.vn/"> Các loại máy làm bánh</a>
+    &nbsp;&nbsp; > &nbsp;&nbsp;
+    <a href="https://humg.edu.vn/"> Máy nướng bánh</a>
+    </div>
+    
+    <div class="img">
+        <div class="to">
+            <img src="https://havietpro.vn/media/lib/14-07-2021/may-nuong-banh-mi-electrolux-ets1303w1.jpg" alt="" id="so1"> 
+      
+        </div>
+       
+    </div>
+    <div class="content">
+        <div class="headLine">
+            
+         <div>Máy nướng bánh mỳ Electrolux ETS1303W giá rẻ nhất thị trường </div>
+        </div>
+        <br>
+    
+        <br>
+           
+         <div class="sale"> <del>đ630.000 </del>   385.000   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -39%  </div>  
+         <br>
+        <div class="ngoai">
+           <div class="trai"> 
+     
+      
+      <p>Vận chuyển</p>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+    
+      <p>Số lượng</p>
+      <br>
+      <br>
+  
+      
+      <button id="add"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</button>
+
+        </div>
+        <div class="phai">
+            
+            
+            <p><i class="fa-solid fa-truck-fast" id="xanh"></i> Miễn phí vận chuyển</p>
+           
+                
+           <br> 
+           
+           <br>
+           <br>
+          <br>
+            
+            <button onclick="minus()">-</button>
+            <input type="number" id="soLuong" value="1" min="1">
+            <button id="plus">+</button>
+            <br>
+            <br>
+            <br>
+       
+      
+             <button id="mua">Mua ngay</button>                       
+        </div>
+    </div>
+  
+   
+    <script>
+
+$("#plus").click(function(){
+    let currentValue = $("#soLuong").val();
+    currentValue++;
+    $("#soLuong").val(currentValue);
+});
+
+$("#minus").click(function() {
+    let currentValue =parseInt($("#soLuong").val());
+    if( currentValue > 1)
+{
+    currentValue -1 ;
+    $("#soLuong").val(currentValue);  
+}
+    
+});
+
+
+    </script>
+    
+   
+   <table>
+    <tr>
+        <td colspan="2" >THÔNG TIN CHUNG</td>
+    </tr>
+    <tr>
+        <td>SKU:</td>
+        <td style="margin-left: 15px;">14819418741-</td>
+    </tr>
+    <tr>
+        <td>Thương hiệu</td>
+        <td style="margin-left: 15px;">Affc-fga</td>
+    </tr>
+    <tr>
+        <td>Xuất xứ</td>
+        <td style="margin-left: 15px;">
+            <select name="" id="">
+                <option value="">Trung Quốc</option>
+                <option value="">Việt Nam</option>
+                <option value="">Thái Lan</option>
+            </select>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
